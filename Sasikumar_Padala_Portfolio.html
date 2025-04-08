@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sasikumar Padala | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.3s, color 0.3s;
+    }
+    body {
+      background-color: #f0f4f8;
+      color: #1f2937;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    body.dark {
+      background-color: #1f2937;
+      color: #f0f4f8;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #1d4ed8;
+    }
+    body.dark h2 {
+      color: #60a5fa;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideUp 1s ease-in-out;
+    }
+    body.dark section {
+      background: #374151;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      font-weight: 600;
+      color: #2563eb;
+    }
+    body.dark .highlight {
+      color: #93c5fd;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+    .contact a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+    body.dark .contact a {
+      color: #93c5fd;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #1d4ed8;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      z-index: 999;
+    }
+    .toggle-btn:hover {
+      background: #2563eb;
+    }
+    .shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background: url('https://www.transparenttextures.com/patterns/cubes.png');
+      opacity: 0.05;
+      z-index: -1;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      section {
+        padding: 1rem;
+      }
+      .toggle-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shapes"></div>
+  <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark/Light</button>
+  <header>
+    <h1>Sasikumar Padala</h1>
+    <p>Engineering Assistant | Aspiring IT Professional</p>
+  </header>
+  <section>
+    <h2>About Me</h2>
+    <p>I’m a Mechanical Engineer currently working as an Engineering Assistant in the AP Government. I have a strong passion for technology and software development, and I’m actively working on transitioning into the IT industry by building skills in web development, Python, Salesforce, SQL, and more.</p>
+  </section>
+  <section>
+    <h2>Key Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript, Python, SQL, Java (Basic)</li>
+      <li>Excel (Advanced), Data Analysis, Web Scraping</li>
+      <li>Salesforce Admin & Associate (CRM, Reports, Automation)</li>
+      <li>Process Builder, Flow, Validation Rules, Data Management</li>
+      <li>Version Control (Git), Tech Curiosity, Team Collaboration</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>Python for Everybody – University of Michigan (Coursera)</li>
+      <li>Salesforce Certified Administrator</li>
+      <li>Salesforce Certified Associate</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><span class="highlight">Web Scraper for Job Listings:</span> Parsed job data using Python and BeautifulSoup.</li>
+      <li><span class="highlight">Email Automation Tool:</span> Automated emails with Python and spreadsheets.</li>
+      <li><span class="highlight">Custom CRM in Salesforce:</span> Built lead and support case app with dashboards.</li>
+      <li><span class="highlight">Personal Portfolio Website:</span> Designed and deployed responsive site.</li>
+      <li><span class="highlight">Excel Sales Dashboard:</span> Interactive dashboards with slicers and pivots.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Current Role – Engineering Assistant (AP Govt.)</h2>
+    <ul>
+      <li>Executed infrastructure projects at the village level (roads, water systems).</li>
+      <li>Monitored quality, safety, and adherence to technical specifications.</li>
+      <li>Maintained technical records, verified work, and handled public grievances.</li>
+      <li>Coordinated with senior engineers and village secretariat staff for development work.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Extracurricular Activities</h2>
+    <ul>
+      <li>Participated in online hackathons and coding challenges</li>
+      <li>Contributed to personal and freelance web projects</li>
+      <li>Active on Stack Overflow and Reddit tech communities</li>
+      <li>Learning continuously via Coursera, Trailhead, and YouTube</li>
+      <li>Volunteered technical help for NGOs and local entrepreneurs</li>
+    </ul>
+  </section>
+  <div class="contact">
+    <p><strong>Contact Me</strong></p>
+    <p>Email: <a href="mailto:sasikpadala@gmail.com">sasikpadala@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917981660399">+91 79816 60399</a></p>
+  </div>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
